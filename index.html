@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5ee">
+  <meta name="description" content="A little pink website made with love for our monthsary.">
+  <title>Happy Monthsary, My Love! 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+  </div>
+
+  <div class="butterfly-deco" aria-hidden="true">
+    <span class="body"></span>
+    <span class="dot left"></span>
+    <span class="dot right"></span>
+  </div>
+
+  <div class="butterfly-slot" aria-label="Butterfly decoration area">
+    <img src="butterfly/butterfly.gif" alt="Butterfly decoration" onerror="this.style.display='none'">
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to home">♡ us</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a href="#memories">Memories</a>
+      <a href="#letter">My Letter</a>
+      <a href="#song">Our Song</a>
+      <a href="#reasons">Why I Love You</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-card">
+        <div class="tiny-label">A little website made just for you</div>
+        <div class="heart-seal">♥</div>
+        <p class="eyebrow">To my favorite person</p>
+        <h1>Happy Monthsary,<br><span>My Love!</span></h1>
+        <p class="hero-copy">Another month, another reason to be grateful for you. You make my world so much brighter. ♡</p>
+        <button class="primary-btn" id="surpriseBtn">Open My Surprise ✨</button>
+        <p class="surprise-message hidden" id="surpriseMessage">Surprise! You are still my favorite hello, my safest place, and the person I choose every day. I love you! 💗</p>
+        <div class="scribble">♡ ∿ ♡</div>
+      </div>
+      <a class="scroll-hint" href="#countdown">scroll for our little story ↓</a>
+    </section>
+
+    <section class="section countdown-section" id="countdown">
+      <p class="eyebrow">Every day with you is a gift</p>
+      <h2>Our Little Countdown <span>♡</span></h2>
+
+      <div class="countdown-grid">
+        <div class="count-box"><strong id="days">—</strong><span>days</span></div>
+        <div class="count-box"><strong id="hours">—</strong><span>hours</span></div>
+        <div class="count-box"><strong id="minutes">—</strong><span>minutes</span></div>
+        <div class="count-box"><strong id="seconds">—</strong><span>seconds</span></div>
+      </div>
+      <p class="count-caption">and counting… more memories, more laughter, more us. 💞</p>
+    </section>
+
+    <section class="section" id="memories">
+      <p class="eyebrow">Little moments, big feelings</p>
+      <h2>Our Favorite Memories <span>♡</span></h2>
+      <div class="photo-grid">
+        <figure class="photo-card tilt-left">
+          <img src="photos/photo1.jpg" alt="Our favorite memory one" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><b>Add your photo</b><small>photos/photo1.jpg</small></div>
+          <figcaption>My favorite kind of day</figcaption>
+        </figure>
+        <figure class="photo-card tilt-right">
+          <img src="photos/photo2.jpg" alt="Our favorite memory two" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><b>Add your photo</b><small>photos/photo2.jpg</small></div>
+          <figcaption>Anywhere is special with you</figcaption>
+        </figure>
+        <figure class="photo-card tilt-right">
+          <img src="photos/photo3.jpg" alt="Our favorite memory three" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><b>Add your photo</b><small>photos/photo3.jpg</small></div>
+          <figcaption>A moment I want to keep</figcaption>
+        </figure>
+        <figure class="photo-card tilt-left">
+          <img src="photos/photo4.jpg" alt="Our favorite memory four" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><b>Add your photo</b><small>photos/photo4.jpg</small></div>
+          <figcaption>My person, always</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">From my heart to yours</p>
+      <h2>A Little Letter for You <span>💌</span></h2>
+      <button class="envelope" id="letterBtn" aria-expanded="false" aria-controls="loveLetter">
+        <span class="envelope-heart">♥</span>
+        <span>Tap to open your letter</span>
+      </button>
+      <article class="letter-paper hidden" id="loveLetter">
+        <p>To my love,</p>
+        <p>Thank you for being part of my life and for making ordinary days feel special. I love the little things about us — our conversations, our laughter, and the comfort of knowing I have you.</p>
+        <p>I know we won't always have perfect days, but I promise to keep learning, understanding, and choosing you. I hope we continue to grow together, celebrate each other's wins, and make more memories we can look back on with smiles.</p>
+        <p>Thank you for being you. You mean more to me than words can fully explain.</p>
+        <p class="signature">Always yours, <span>♡</span><br><strong>Your Love</strong></p>
+      </article>
+    </section>
+
+    <section class="section song-section" id="song">
+      <p class="eyebrow">Press play and think of us</p>
+      <h2>Our Song <span>♫</span></h2>
+      <div class="song-card">
+        <div class="record">♫</div>
+        <div class="song-info">
+          <h3>Your special song goes here</h3>
+          <audio id="audioPlayer" controls preload="none">
+            <source src="music/our-song.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+          </audio>
+          <small>Phones may require you to tap play before music starts.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reasons-section" id="reasons">
+      <p class="eyebrow">I could list a thousand</p>
+      <h2>Reasons Why I Love You <span>♥</span></h2>
+      <div class="reasons-list">
+        <div class="reason"><span>♥</span><p>You make me smile, even on difficult days.</p></div>
+        <div class="reason"><span>♥</span><p>You listen to me and make me feel understood.</p></div>
+        <div class="reason"><span>♥</span><p>You support my dreams and celebrate my little wins.</p></div>
+        <div class="reason"><span>♥</span><p>I can be myself when I am with you.</p></div>
+        <div class="reason"><span>♥</span><p>You make ordinary moments feel meaningful.</p></div>
+        <div class="reason"><span>♥</span><p>Even after all this time, I still choose you.</p></div>
+      </div>
+      <p class="reasons-footer">And so many more reasons that words could never fit. ♡</p>
+    </section>
+
+    <section class="finale section">
+      <div class="finale-heart">♡</div>
+      <p class="eyebrow">One more thing, my love…</p>
+      <h2>Here's to more months,<br>more memories,<br>and a lifetime of choosing you.</h2>
+      <p class="big-love">I love you. <span>♥</span></p>
+      <p class="final-small">Forever looks good on us. ♡</p>
+    </section>
+  </main>
+
+  <footer>Made with all my love <span>♥</span> just for you.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
